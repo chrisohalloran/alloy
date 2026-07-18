@@ -1,0 +1,14 @@
+# Bootstraps Codex for the alloy project
+version = 1
+name = "alloy"
+
+[setup]
+script = '''
+set -euo pipefail
+elixir -v
+mix -v
+mix local.hex --force
+mix local.rebar --force
+mix deps.get
+mix compile
+'''
