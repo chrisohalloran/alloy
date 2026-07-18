@@ -39,3 +39,4 @@ priv/plts/
 
 # Launch / marketing content (internal only).
 alloy-launch-content.md
+.claude/worktrees/
