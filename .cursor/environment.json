@@ -1,0 +1,7 @@
+{
+  "name": "Alloy (Elixir)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "install": "./install.sh"
+}
