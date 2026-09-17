@@ -3,5 +3,5 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "install": "./install.sh"
+  "install": "./.cursor/install.sh"
 }
