@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Docs
+
+- Document current model/API and MCP compatibility, adaptive thinking,
+  context-window overrides, and the limits of built-in monetary accounting.
+- Add the current Anthropic remote MCP connector payload and beta header,
+  clarify client protocol support and static discovery caching, and correct
+  Codex streaming/usage and conditional website-sync descriptions.
+
 ## [0.12.4] - 2026-07-03
 
 ### Fixed

@@ -33,8 +33,8 @@ defmodule Alloy.Provider.Codex do
   - Authentication is handled by the local `codex` CLI login state.
   - By default the provider creates a minimal temporary `CODEX_HOME` containing
     only `auth.json`, which avoids pulling in the user's full MCP/plugin config.
-  - Usage accounting is not exposed by `codex exec` in a structured form yet,
-    so this provider currently reports zero token counts.
+  - This adapter currently reports zero token counts. `codex exec --json`
+    exposes JSONL usage events, but the adapter does not yet consume them.
   - Streaming is emulated by running a normal completion and replaying the final
     text to the provided callback.
   """

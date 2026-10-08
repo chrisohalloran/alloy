@@ -20,7 +20,9 @@ defmodule Alloy.Provider.Anthropic do
   - `:extra_headers` - Additional headers as `[{name, value}]`
   - `:extra_body` - Additional request body fields, merged last
   - `:req_options` - Additional options passed to Req (useful for testing)
-  - `:extended_thinking` - Enable extended thinking. Pass a keyword list with
+  - `:extended_thinking` - Legacy manual thinking for models that support it.
+    Claude 4.7 and later reject this mode; use adaptive thinking through
+    `:extra_body` instead. Enable manual extended thinking. Pass a keyword list with
     `:budget_tokens` (e.g., `[budget_tokens: 5000]`). Thinking blocks are
     returned in the message content and must be round-tripped verbatim in
     subsequent turns (Anthropic requires the `signature` field).
